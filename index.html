@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="main.css">
-</head>
-<body>
-
-  <script src="dist/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoops Ahoy</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/vanilla-js-carousel/vanilla-js-carousel.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Carousel</h1>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="js-Carousel" id="carousel">
+      <ul>
+        <li><img src="images/strangerthings1.jpg" alt="" /></li>
+        <li><img src="images/strangerthings2.jpg" alt="" /></li>
+        <li><img src="images/strangerthings3.png" alt="" /></li>
+        <li><img src="images/strangerthings4.png" alt="" /></li>
+      </ul>
+    </div>
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Chat</h1>
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          Close
+        </button>
+      </form>
+    </div>
+    <script src="dist/main.js"></script>
+  </body>
 </html>
